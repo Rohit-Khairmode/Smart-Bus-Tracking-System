@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <title>admin</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../html/index.html">
+          <ion-icon name="bus" class="logo"></ion-icon>
+          <p class="logo-text">SBTS</p>
+        </a>
+        <div class="admin-info">
+          <div class="admin-icon">
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+          <h3 class="admin-username">Rohit Khairmode</h3>
+          <h4 class="admin-email">rohitkhairmode@gmail.com</h4>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <menu>
+        <button>Dashboard</button>
+        <button>Driver Profile</button>
+        <button>Vehicle Profile</button>
+        <button>Transporter Profile</button>
+        <button>Passenger Profile</button>
+      </menu>
+      <div class="section-container">
+        <section class="section-dashboard">
+          <div class="number-of-passengers">
+            <p>Total number of passengers</p>
+            <ion-icon name="people-outline"></ion-icon>
+          </div>
+          <div class="number-of-drivers"></div>
+          <div class="number-of-vehicles"></div>
+        </section>
+        <section class="section-drivers hidden">
+          <h2>List Of Drivers</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="search by mobile number" />
+            <button>Search</button>
+            <button>add</button>
+          </div>
+          <table>
+            <thead>
+              <th>Sr No.</th>
+              <th>D-ID</th>
+              <th>Name</th>
+              <th>Mobile</th>
+              <th>Age</th>
+              <th>Licence No</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>D002</td>
+                <td>RAM</td>
+                <td>9123456734</td>
+                <td>32</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>D002</td>
+                <td>RAM</td>
+                <td>9123456734</td>
+                <td>32</td>
+                <td>ABC123</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>D002</td>
+                <td>RAM</td>
+                <td>9123456734</td>
+                <td>32</td>
+                <td>ABC123</td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="form-driver">
+            <label for="driver-name">Name</label>
+            <input type="text" id="driver-name" placeholder="Ram Singh" />
+            <label for="driver-phone"></label>
+            <input type="tel" id="driver-phone" placeholder="9876543210" />
+            <label for="driver-age"></label>
+            <input type="number" id="driver-age" placeholder="32" />
+            <label for="driver-license">License number</label>
+            <input type="number" placeholder="ABC123" />
+            <button>Clear</button>
+            <button>Add</button>
+          </form>
+        </section>
+        <section class="section-vehicle hidden">
+          <h2>List Of Vehicles</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="search by vehicle number" />
+            <button>Search</button>
+            <button>add</button>
+          </div>
+          <table>
+            <thead>
+              <th>Sr No.</th>
+              <th>V-ID</th>
+              <th>Vehicle Number</th>
+              <th>Driver</th>
+              <th>Vehicle type</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>V002</td>
+                <td>MH101002</td>
+                <td>Raju</td>
+                <td>Bus</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>V002</td>
+                <td>MH101002</td>
+                <td>Raju</td>
+                <td>Bus</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>V002</td>
+                <td>MH101002</td>
+                <td>Raju</td>
+                <td>Bus</td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="form-vehicle">
+            <label for="vehicle-number">Vehicle Number</label>
+            <input type="text" id="vehicle-number" placeholder="MH101004" />
+            <label for="vehicle-driver"></label>
+            <input type="text" id="vehicle-driver" placeholder="Raju rastogi" />
+            <label for="vehicle-type"></label>
+            <input type="text" id="vehicle-type" placeholder="bus" />
+            <button>Clear</button>
+            <button>Add</button>
+          </form>
+        </section>
+        <section class="section-Transporter hidden">
+          <h2>List Of Transporter</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="search by mobile number" />
+            <button>Search</button>
+            <button>add</button>
+          </div>
+          <table>
+            <thead>
+              <th>Sr No.</th>
+              <th>T-ID</th>
+              <th>Name</th>
+              <th>Mobile</th>
+              <th>Age</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>T002</td>
+                <td>Raju</td>
+                <td>9087675477</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>T002</td>
+                <td>Raju</td>
+                <td>9087675477</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>T002</td>
+                <td>Raju</td>
+                <td>9087675477</td>
+                <td>34</td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="form-transporter">
+            <label for="transporter-name">Transporter Name</label>
+            <input type="text" id="vehicle-number" placeholder="Raju Singh" />
+            <label for="transporter-phone"></label>
+            <input
+              type="number"
+              id="transporter-phone"
+              placeholder="9087675477"
+            />
+            <label for="transporter-age"></label>
+            <input type="text" id="transporter-age" placeholder="34" />
+            <button>Clear</button>
+            <button>Add</button>
+          </form>
+        </section>
+        <section class="section-passenger hidden">
+          <h2>List Of Transporter</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="search by mobile number" />
+            <button>Search</button>
+            <button>add</button>
+          </div>
+          <table>
+            <thead>
+              <th>Sr No.</th>
+              <th>Passenger Name</th>
+              <th>Passenger-ID</th>
+              <th>Mobile</th>
+              <th>Vehicle number morning</th>
+              <th>Vehicle number evening</th>
+              <th>Bus stop name</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ravi</td>
+                <td>P001</td>
+                <td>9087675477</td>
+                <td>MH101002</td>
+                <td>MH101002</td>
+                <td>shahupuri</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Ravi</td>
+                <td>P001</td>
+                <td>9087675477</td>
+                <td>MH101002</td>
+                <td>MH101002</td>
+                <td>shahupuri</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Ravi</td>
+                <td>P001</td>
+                <td>9087675477</td>
+                <td>MH101002</td>
+                <td>MH101002</td>
+                <td>shahupuri</td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="form-passenger">
+            <label for="passenger-name">Passenger Name</label>
+            <input type="text" id="passenger-name" placeholder="Raju Singh" />
+            <label for="passenger-phone"></label>
+            <input
+              type="number"
+              id="passenger-phone"
+              placeholder="9087675477"
+            />
+            <label for="passenger-bus-number-morning">morning bus number</label>
+            <input
+              type="text"
+              id="passenger-bus-number-morning"
+              placeholder="MH101002"
+            />
+            <label for="passenger-bus-number-evening">evening bus number</label>
+            <input
+              type="text"
+              id="passenger-bus-number-evening"
+              placeholder="MH101002"
+            />
+            <label for="passenger-bus-stop">Bus stop</label>
+            <input
+              type="text"
+              id="passenger-bus-stop"
+              placeholder="shahupuri"
+            />
+            <button>Clear</button>
+            <button>Add</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

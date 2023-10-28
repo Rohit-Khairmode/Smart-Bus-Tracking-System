@@ -1,0 +1,100 @@
+/* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+input *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.6rem rgba(52, 152, 219, 0.918);
+  border-radius: 1rem;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.267),
+      rgba(52, 152, 219, 0.511)
+    ),
+    url(../img/chuttersnap-kq8iWoh5-mU-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+h1 {
+  color: #eae5e5;
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 3.6rem;
+}
+.form {
+  margin: 0 auto;
+  max-width: 100rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 5rem;
+  color: #eae5e5;
+  background-color: rgba(51, 51, 51, 0.836);
+}
+label {
+  font-size: 2.4rem;
+  color: #eae5e5;
+  padding: 1.4rem 0rem;
+}
+input {
+  padding: 1.4rem;
+  border: none;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+  font-size: 2rem;
+  color: rgba(51, 51, 51, 0.806);
+  font-weight: 500;
+}
+input::placeholder {
+  opacity: 0.5;
+}
+fieldset {
+  margin: 1rem 0rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+legend {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  width: 48%;
+  font-size: 2.4rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 1.2rem;
+  color: #fff;
+  background-color: #4caf50;
+  transition: all 0.3s;
+}
+.cancelB {
+  background-color: rgba(51, 51, 51, 0.836);
+  color: #aaa;
+}
+.cancelB:hover {
+  background-color: #4caf50;
+}
+button:hover {
+  background-color: #2ecc71;
+  color: #fff;
+}

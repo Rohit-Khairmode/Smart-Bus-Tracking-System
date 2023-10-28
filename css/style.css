@@ -654,3 +654,9 @@ footer {
 .Help-Support button:hover {
   background-color: #5f3dc4;
 }
+input::placeholder {
+  opacity: 50%;
+}
+textarea::placeholder {
+  opacity: 50%;
+}

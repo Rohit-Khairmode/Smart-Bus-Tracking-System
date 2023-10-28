@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  /* overflow-x: hidden; */
+  height: 100vh;
+  width: 100vw;
+  color: #333;
+
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.267),
+      rgba(52, 152, 219, 0.511)
+    ),
+    url(../img/chuttersnap-kq8iWoh5-mU-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+main {
+  display: flex;
+  margin: 0 auto;
+  max-width: 120rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing {
+  margin-top: 15%;
+  width: 30%;
+  /* height: 50vh; */
+  align-self: center;
+  /* text-align: center; */
+  border: 1px solid #333;
+  padding: 4rem 3rem;
+  background-color: #fff;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+.premium {
+  box-shadow: 0 10px 5px 10px rgba(0, 0, 0, 0.253);
+  background-color: #fbd999;
+}
+.premium-price {
+  color: #573800;
+}
+.INR {
+  font-size: 3rem;
+}
+ul {
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 1rem 3rem;
+}
+h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  opacity: 50%;
+  text-align: center;
+}
+.price {
+  font-size: 4.8rem;
+  text-align: center;
+}
+li {
+  display: flex;
+  gap: 1rem;
+  font-weight: 500;
+}
+.features {
+  font-size: 2rem;
+}
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  align-self: auto;
+  background-color: rgba(76, 175, 79, 0.623);
+  border-radius: 50%;
+  color: #fff;
+  border: none;
+  flex-shrink: 0;
+}
+.payment-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 2rem; */
+  /* transform: translateX(-4rem); */
+}

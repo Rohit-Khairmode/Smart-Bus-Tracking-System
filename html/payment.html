@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/payment.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="pricing">
+        <h4>ESSENTIAL</h4>
+        <p class="price">2000 <span class="INR">&#x20b9;/mo</span></p>
+        <ul>
+          <li>
+            <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon
+            ><span class="features"> Live Vehicle Tracking</span>
+          </li>
+          <li>
+            <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon
+            ><span class="features"> Message services</span>
+          </li>
+          <li>
+            <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon
+            ><span class="features">Number of Vehicles 1-10</span>
+          </li>
+          <li>
+            <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon
+            ><span class="features"
+              >Installation cost 10,000 &#x20b9;/per vehicle</span
+            >
+          </li>
+          <form>
+            <script
+              src="https://checkout.razorpay.com/v1/payment-button.js"
+              data-payment_button_id="pl_Mt5IAMIdI1DCmP"
+              async
+            ></script>
+          </form>
+        </ul>
+      </div>
+
+      <div class="pricing premium">
+        <h4>PREMIUM</h4>
+        <p class="price premium-price">
+          5000 <span class="INR">&#x20b9;/mo</span>
+        </p>
+        <ul>
+          <li>
+            <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon
+            ><span class="features">Live Vehicle Tracking</span>
+          </li>
+          <li>
+            <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon
+            ><span class="features">Message services</span>
+          </li>
+          <li>
+            <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon
+            ><span class="features">Number of Vehicles 11-20</span>
+          </li>
+          <li>
+            <ion-icon name="checkmark-circle-outline" class="icon"></ion-icon>
+            <span class="features">
+              Installation cost 10,000 &#x20b9;/per vehicle</span
+            >
+          </li>
+          <form>
+            <script
+              src="https://checkout.razorpay.com/v1/payment-button.js"
+              data-payment_button_id="pl_Mtl0pZexahVn7U"
+              async
+            ></script>
+          </form>
+        </ul>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
