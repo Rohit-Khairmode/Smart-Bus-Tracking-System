@@ -22,24 +22,81 @@
         </div>
       </nav>
     </header>
-    <main>
-      <menu>
-        <button>Dashboard</button>
-        <button>Driver Profile</button>
-        <button>Vehicle Profile</button>
-        <button>Transporter Profile</button>
-        <button>Passenger Profile</button>
+    <main class="main">
+      <menu class="menu">
+        <button id="dashboard" class="menu-btn menu-btn-active">
+          Dashboard
+        </button>
+        <button id="drivers" class="menu-btn">Driver Profile</button>
+        <button id="vehicle" class="menu-btn">Vehicle Profile</button>
+        <button id="transporter" class="menu-btn">Transporter Profile</button>
+        <button id="passenger" class="menu-btn">Passenger Profile</button>
       </menu>
       <div class="section-container">
-        <section class="section-dashboard">
-          <div class="number-of-passengers">
-            <p>Total number of passengers</p>
-            <ion-icon name="people-outline"></ion-icon>
+        <section class="section-dashboard sec">
+          <div class="info-boxes">
+            <div class="passengers-box count-box">
+              <p>Total passengers</p>
+              <ion-icon name="people-outline" class="box-icon"></ion-icon>
+              <p class="num-passengers num">100</p>
+            </div>
+            <div class="vehicles-box count-box">
+              <p>Total Vehicles</p>
+              <ion-icon name="bus-outline" class="box-icon"></ion-icon>
+              <p class="num-vehicles num">4</p>
+            </div>
+            <div class="drivers-box count-box">
+              <p>Total Drivers</p>
+              <ion-icon name="people-outline" class="box-icon"></ion-icon>
+              <p class="num-drivers num">4</p>
+            </div>
           </div>
-          <div class="number-of-drivers"></div>
-          <div class="number-of-vehicles"></div>
+          <div class="message">
+            <div class="msg-heading">
+              <h2>Messages</h2>
+              <button class="send-msg btn">Send message</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Sr. No.</th>
+                  <th>Sender</th>
+                  <th>Subject</th>
+                  <th>Date & Time</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Omkar Yerudkar</td>
+                  <td>For changing in route</td>
+                  <td>27/9/2023</td>
+                  <td>viewed</td>
+                  <td><button class="view btn">view</button></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Anish Shinde</td>
+                  <td>For changing in route</td>
+                  <td>21/10/2023</td>
+                  <td>viewed</td>
+                  <td><button class="view btn">view</button></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Rohit Patil</td>
+                  <td>For changing in route</td>
+                  <td>30/10/2023</td>
+                  <td>viewed</td>
+                  <td><button class="view btn">view</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
-        <section class="section-drivers hidden">
+        <section class="section-drivers sec hidden">
           <h2>List Of Drivers</h2>
           <div class="search-bar">
             <input type="text" placeholder="search by mobile number" />
@@ -95,57 +152,100 @@
             <button>Add</button>
           </form>
         </section>
-        <section class="section-vehicle hidden">
+        <section class="section-vehicle sec hidden">
           <h2>List Of Vehicles</h2>
-          <div class="search-bar">
-            <input type="text" placeholder="search by vehicle number" />
-            <button>Search</button>
-            <button>add</button>
+          <div class="vehicle-search-bar">
+            <input
+              type="text"
+              placeholder="search by vehicle number"
+              class="vehicle-search-input"
+            />
+            <button class="vehicle-search-btn btn">Search</button>
           </div>
-          <table>
-            <thead>
-              <th>Sr No.</th>
-              <th>V-ID</th>
-              <th>Vehicle Number</th>
-              <th>Driver</th>
-              <th>Vehicle type</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>V002</td>
-                <td>MH101002</td>
-                <td>Raju</td>
-                <td>Bus</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>V002</td>
-                <td>MH101002</td>
-                <td>Raju</td>
-                <td>Bus</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>V002</td>
-                <td>MH101002</td>
-                <td>Raju</td>
-                <td>Bus</td>
-              </tr>
-            </tbody>
-          </table>
-          <form class="form-vehicle">
-            <label for="vehicle-number">Vehicle Number</label>
-            <input type="text" id="vehicle-number" placeholder="MH101004" />
-            <label for="vehicle-driver"></label>
-            <input type="text" id="vehicle-driver" placeholder="Raju rastogi" />
-            <label for="vehicle-type"></label>
-            <input type="text" id="vehicle-type" placeholder="bus" />
-            <button>Clear</button>
-            <button>Add</button>
-          </form>
+
+          <div class="vehicle-list">
+            <label class="add-vehicle-label">Add new Vehicles</label>
+            <button class="add-vehicle btn">add</button>
+            <table>
+              <thead>
+                <th>Sr No.</th>
+                <th>V-ID</th>
+                <th>Vehicle Number</th>
+                <th>Driver</th>
+                <th>Vehicle type</th>
+                <th>Live Location</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>V002</td>
+                  <td>MH101002</td>
+                  <td>Raju</td>
+                  <td>Bus</td>
+                  <td>
+                    <button class="location-btn btn">
+                      <ion-icon name="location-outline"></ion-icon
+                      ><span class="location-btn-txt">view</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
-        <section class="section-Transporter hidden">
+        <section class="section-transporter sec hidden">
           <h2>List Of Transporter</h2>
           <div class="search-bar">
             <input type="text" placeholder="search by mobile number" />
@@ -199,7 +299,7 @@
             <button>Add</button>
           </form>
         </section>
-        <section class="section-passenger hidden">
+        <section class="section-passenger sec hidden">
           <h2>List Of Transporter</h2>
           <div class="search-bar">
             <input type="text" placeholder="search by mobile number" />
@@ -280,6 +380,60 @@
       </div>
     </main>
 
+    <!-- Vehicle live location & information -->
+
+    <!-- Modal section -->
+    <section class="modals">
+      <div class="message-modal modal hidden">
+        <h2>Sender: <span class="sender-name">Omkar Yerudkar</span></h2>
+        <h3>Subject : <span>For changing route</span></h3>
+        <div>
+          Hello sir,<br />
+          My name is Omkar Yerudkar I am last year student of computer
+          department my current bus stop is CBS but due change in my current
+          address I want to change my pick up stop to CYBER college <br />
+          Thank you
+        </div>
+      </div>
+      <div class="send-msg-modal modal hidden">
+        <fieldset>
+          <label for="receiver-email">Receiver's email </label>
+          <input
+            id="receiver-email"
+            type="text"
+            class="receiver-email"
+            placeholder="enter receiver's email"
+            required
+          />
+        </fieldset>
+        <textarea
+          rows="10"
+          cols="33"
+          placeholder="Enter your message here"
+        ></textarea>
+        <button class="btn send-mail">Send mail</button>
+      </div>
+      <div class="success-msg modal hidden">
+        <ion-icon
+          name="checkmark-done-circle-outline"
+          class="success-msg-icon"
+        ></ion-icon>
+        <p class="success-msg-msg">Message sent successfully</p>
+      </div>
+      <form class="form-vehicle modal hidden">
+        <label for="vehicle-number">Vehicle Number</label>
+        <input type="text" id="vehicle-number" placeholder="MH101004" />
+        <label for="vehicle-driver">Driver Name</label>
+        <input type="text" id="vehicle-driver" placeholder="Raju rastogi" />
+        <label for="vehicle-type">Type of vehicle</label>
+        <input type="text" id="vehicle-type" placeholder="bus" />
+        <div class="form-vehicle-btn">
+          <button class="btn">Add</button>
+          <button class="btn">Clear</button>
+        </div>
+      </form>
+      <div class="overlay hidden"></div>
+    </section>
     <!-- ionicons -->
     <script
       type="module"
@@ -289,5 +443,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="../js/admin.js"></script>
   </body>
 </html>
